@@ -1,0 +1,290 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+
+h2,h3,h5,ul{
+  margin: 0;
+}
+
+h1,h2,h3{
+  font-weight: 500;
+}
+/* Class CSS */
+.section {
+  padding: 4rem 0 2rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.section-title, .section-subtitle {
+  text-align: center;
+}
+.section-title {
+  font-size: 30px;
+  color: #2F0A0D;;
+  font-weight: bold;
+}
+
+.section-subtitle {
+  display: block;
+  font-size: 15px;
+  font-weight: 600;
+  padding-top: 30px;
+}
+
+/* Nav */
+
+.nav_link:hover {
+  color: #7B6F71;
+}
+
+/* HOME */
+.home_data{
+  padding-top: 80px;
+}
+
+.home_name {
+  font-size: 40px;
+}
+
+.home_social {
+ padding-top: 50px;
+}
+
+.home_social .home_social-icon {
+  display: inline;
+  margin: 10px;
+  color: white;
+  width: max-content;
+  font-size: x-large;
+}
+
+.home_social-icon:hover{
+  color: #7B6F71;
+}
+
+.home_img{
+  right: 0;
+  bottom: 0;
+}
+.home_img img{
+  width: 100%;
+  opacity: 0.7;
+}
+
+.home_greeting {
+  font-size: 20;
+}
+.home_aspiring {
+  font-size: 26px;
+}
+
+.home_aspiring .home_professions {
+  font-size: 26px;
+  color: red;
+}
+
+.button-cv {
+  padding-top: 30px;
+}
+
+.btn-cv:hover {
+  color: #2F0A0D;
+  transition: .3s;
+}
+
+/* About */
+.about_img .about-image{
+  padding-top: 40px;
+  width: 300px;
+}
+
+.about_description {
+  padding-top: 50px;
+}
+
+.about_description .about-desc {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  color: #3E0E12;
+}
+
+/* Qualification */
+.qualification_title{
+  color: #3E0E12;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: medium;
+}
+
+.qualification_content {
+  padding-top: 30px;
+  padding-left: 10px;
+}
+
+.qualification-title_icon{
+  margin-right: 8px;
+  size: 12px;
+}
+
+.qualification_box {
+  padding-bottom: 16px;
+  border-bottom: 1px solid #CCC;
+}
+
+.qualification_area{
+  font-size: medium;
+  color: #3E0E12;
+  margin-bottom: 8px;
+}
+
+.qualification_icon, .qualification_work{
+  font-size: medium;
+  color: #7B6F71;
+}
+.qualification_work{
+  display: block;
+}
+
+/* Skills */
+.skills_container{
+  row-gap: 0;
+}
+
+.skills_header{
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.skills_icon {
+  font-size: 30px;
+  color: #3E0E12;
+  margin-right: 10px;
+}
+
+.skills_title {
+  font-size: large;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.skills_subtitle {
+  font-size: small;
+  color: #2F0A0D;
+}
+
+.skills_list{
+  row-gap: 1.5rem;
+  padding-bottom: 30px;
+}
+
+.skills_titles{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: .5rem;
+}
+
+.skills_name{
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.skills_bar, .skills_percentage{
+  height: 5px;
+  border-radius: .25rem;
+}
+
+.skills_bar{
+  background-color: #7B6F71;
+}
+
+.skills_number {
+  padding-top: 20px;
+}
+
+.skills_percentage{
+  display: block;
+  background-color: #2F0A0D;
+}
+
+.skills_html{
+  width: 80%;
+}
+.skills_css{
+  width: 80%;
+}
+.skills_js {
+  width: 70%;
+}
+.skills_material{
+  width: 70%;
+}
+.skills_php {
+  width: 80%;
+}
+.skills_asp{
+  width: 70%;
+}
+.skills_laravel{
+  width: 70%;
+}
+.skills_python{
+  width: 60%;
+}
+
+/* Portfolio and Contact */
+.portfolio-padding, .contact-padding {
+  padding-top: 20px;
+}
+
+/* Footer */
+.footer_title{
+  font-size: x-large;
+  margin-bottom: .5rem;
+  font-weight: 600;
+}
+
+.footer_container{
+  padding: 1rem 0;
+}
+
+.footer_description{
+  margin-bottom: 1.5rem;
+}
+
+.footer_social{
+  margin-bottom: 1rem;
+}
+
+.footer_link{
+  font-size: 1.4rem;
+  color: #FBF9F9;
+  margin: 0 .5rem;
+  transition: .3s;
+}
+
+.footer_link:hover{
+  color: #7B6F71;
+}
+
+.footer_copy{
+  font-size: medium;
+  color: #7B6F71;
+}
+
+
