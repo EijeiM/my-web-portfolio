@@ -14,10 +14,16 @@ body{
 
 h2,h3,h5,ul{
   margin: 0;
+  font-family: 'Poppins', sans-serif;
 }
 
 h1,h2,h3{
   font-weight: 500;
+}
+
+h6 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
 }
 /* Class CSS */
 .section {
@@ -32,7 +38,7 @@ h1,h2,h3{
 }
 .section-title {
   font-size: 30px;
-  color: #2F0A0D;;
+  color: #2F0A0D;
   font-weight: bold;
 }
 
@@ -47,6 +53,13 @@ h1,h2,h3{
 
 .nav_link:hover {
   color: #7B6F71;
+}
+
+/* Modal */
+.modal-content .modal-title, .modal-footer .modal-close {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: #2F0A0D;
 }
 
 /* HOME */
@@ -90,7 +103,7 @@ h1,h2,h3{
   font-size: 26px;
 }
 
-.home_aspiring .home_professions {
+.home_professions {
   font-size: 26px;
   color: red;
 }
@@ -108,6 +121,7 @@ h1,h2,h3{
 .about_img .about-image{
   padding-top: 40px;
   width: 300px;
+  margin: 0 auto;
 }
 
 .about_description {
@@ -118,6 +132,10 @@ h1,h2,h3{
   font-family: 'Poppins', sans-serif;
   font-size: 20px;
   color: #3E0E12;
+}
+
+.btn-padding {
+  padding: 20px;
 }
 
 /* Qualification */
@@ -232,24 +250,42 @@ h1,h2,h3{
   width: 70%;
 }
 .skills_material{
-  width: 70%;
-}
-.skills_php {
   width: 80%;
 }
-.skills_asp{
+.skills_php {
   width: 70%;
+}
+.skills_asp{
+  width: 50%;
 }
 .skills_laravel{
-  width: 70%;
+  width: 50%;
 }
 .skills_python{
-  width: 60%;
+  width: 50%;
 }
 
-/* Portfolio and Contact */
-.portfolio-padding, .contact-padding {
+/* Portfolio */
+.portfolio-padding {
   padding-top: 20px;
+}
+
+/* Contact */
+.contact-padding {
+  padding-top: 20px;
+}
+
+.card-panel .font-phone, 
+.card-panel .font-location, 
+.card-panel .font-email, 
+.card-panel .font-chat {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: #2F0A0D;
+}
+
+.card-panel .icon-color {
+  color: #2F0A0D;
 }
 
 /* Footer */

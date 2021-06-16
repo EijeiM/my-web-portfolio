@@ -1,7 +1,13 @@
 $(document).ready(function(){
     // Side Nav
     $('.sidenav').sidenav({
-        edge: 'right'
+        edge: 'right',
+        draggable: false
+    });
+
+    // Modal
+    $('.modal').modal({
+      dismissible: false
     });
 
     // Media Material Box
@@ -17,15 +23,8 @@ $(document).ready(function(){
     // Input Length
     $('input#icon_contacts, input#icon_message').characterCounter();
     
-      // Smooth Scroll
-      $(document).on('click', 'a[href^="#"]', function(e) {
-        e.preventDefault();
-  
-        $('html, body').animate({
-          scrollTop: $($.attr(this, 'href')).offset().top
-        },600);
-      });
 
+      // Form Validation with Sweet Alert Notification
       $('#submit').click(function(){
         Swal.fire({
           position: 'center',
@@ -38,9 +37,18 @@ $(document).ready(function(){
 
       // Typing text animation
       var typed = new Typed(".typing", {
-        strings: ["Web Developer", "Full Stack Web Developer"],
+        strings: ["Web Developer", "Full Stack Web Developer","Programmer"],
         typeSpeed: 100,
         backSpeed: 70,
         loop: true
       });
  });
+
+  // Smooth Scroll
+   $(document).on('click', 'a[href^="#"]', function(e) {
+     e.preventDefault();
+     
+     $('html, body').animate({
+       scrollTop: $($.attr(this, 'href')).offset().top
+      },700);
+    });
