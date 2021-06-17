@@ -24,7 +24,7 @@ $(document).ready(function(){
     $('input#icon_contacts, input#icon_message').characterCounter();
     
 
-      // Form Validation with Sweet Alert Notification
+      // Form Validation with Sweet Alert CDN Notification
       $('#submit').click(function(){
         Swal.fire({
           position: 'center',
@@ -35,9 +35,16 @@ $(document).ready(function(){
         });
       });
 
-      // Typing text animation
+      // Typing text animation from Type JS CDN
       var typed = new Typed(".typing", {
-        strings: ["Web Developer", "Full Stack Web Developer","Programmer"],
+        strings: ["Web Developer", "Full Stack Web Developer","Sofware Engineer", "Programmer"],
+        typeSpeed: 100,
+        backSpeed: 70,
+        loop: true
+      });
+
+      var typed = new Typed(".position", {
+        strings: ["Web Developer", "Full Stack Web Developer","Software Engineer", "Programmer"],
         typeSpeed: 100,
         backSpeed: 70,
         loop: true
@@ -52,3 +59,5 @@ $(document).ready(function(){
        scrollTop: $($.attr(this, 'href')).offset().top
       },700);
     });
+
+    

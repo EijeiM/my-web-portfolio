@@ -55,6 +55,19 @@ h6 {
   color: #7B6F71;
 }
 
+.sidenav {
+  background-color: #2f3640;
+}
+
+.side-nav-profile img {
+  margin: 0 auto;
+}
+
+.side-nav-position .position {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
 /* Modal */
 .modal-content .modal-title, .modal-footer .modal-close {
   font-family: 'Poppins', sans-serif;
