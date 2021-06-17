@@ -22,28 +22,16 @@ $(document).ready(function(){
 
     // Input Length
     $('input#icon_contacts, input#icon_message').characterCounter();
-    
-
-      // Form Validation with Sweet Alert CDN Notification
-      $('#submit').click(function(){
-        Swal.fire({
-          position: 'center',
-          icon: 'success',
-          text: 'Sent has been successfully!',
-          showConfirmButton: false,
-          timer: 2000
-        });
-      });
 
       // Typing text animation from Type JS CDN
-      var typed = new Typed(".typing", {
+      var typed = new Typed('.typing', {
         strings: ["Web Developer", "Full Stack Web Developer","Sofware Engineer", "Programmer"],
         typeSpeed: 100,
         backSpeed: 70,
         loop: true
       });
 
-      var typed = new Typed(".position", {
+      var typed = new Typed('.position', {
         strings: ["Web Developer", "Full Stack Web Developer","Software Engineer", "Programmer"],
         typeSpeed: 100,
         backSpeed: 70,
@@ -60,4 +48,37 @@ $(document).ready(function(){
       },700);
     });
 
-    
+
+    // Form Validation with Sweet Alert CDN Notification using Javascript
+    const name = document.querySelector('.name');
+    const contact = document.querySelector('.contact'); 
+    const email = document.querySelector('.email'); 
+    const message = document.querySelector('.message'); 
+    const submitBtn = document.querySelector('#submit');
+    const form = document.querySelector('#contact-form');
+
+    submitBtn.addEventListener('click', formValidation);
+
+    function formValidation(e) {
+
+      if (name.value === '' || contact.value === '' || email.value === '' || message.value === '') {
+        Swal.fire({
+          icon: 'error',
+          title: 'Must be required',
+          text: 'Name, Contact, Email and Message are required!'
+        });
+      } else {
+        
+        form.reset();
+        Swal.fire({
+          position: 'center',
+          icon: 'success',
+          text: 'Sent has been successfully!',
+          showConfirmButton: false,
+          timer: 2000
+        });
+      }
+      e.preventDefault();
+    }
+   
+
