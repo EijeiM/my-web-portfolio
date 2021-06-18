@@ -75,6 +75,18 @@ h6 {
   color: #2F0A0D;
 }
 
+/* Scroll Reveal */
+.reveal {
+	position: relative;
+	transform: translateY(180px);
+	opacity: 0;
+	transition: all 2s ease;
+}
+.reveal.active {
+	transform: translateY(0px);
+	opacity: 1;
+} 
+
 /* HOME */
 .home_data{
   padding-top: 80px;
