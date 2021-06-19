@@ -122,14 +122,13 @@ h6 {
 }
 
 .home_greeting {
-  font-size: 20;
+  font-size: 20px;
 }
 .home_aspiring {
-  font-size: 26px;
+  font-size: 20px;
 }
 
-.home_professions {
-  font-size: 26px;
+.home_aspiring .home_professions {
   color: red;
 }
 
@@ -144,7 +143,7 @@ h6 {
 
 /* About */
 .about_img .about-image{
-  padding-top: 40px;
+  padding-top: 50px;
   width: 300px;
   margin: 0 auto;
 }

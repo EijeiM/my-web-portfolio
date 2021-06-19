@@ -25,28 +25,28 @@ $(document).ready(function(){
 
       // Typing text animation from Type JS CDN
       var typed = new Typed('.typing', {
-        strings: ["Web Developer", "Full Stack Web Developer","Sofware Engineer", "Programmer"],
+        strings: ["Web Developer", "Programmer"],
         typeSpeed: 100,
         backSpeed: 70,
         loop: true
       });
 
       var typed = new Typed('.position', {
-        strings: ["Web Developer", "Full Stack Web Developer","Software Engineer", "Programmer"],
+        strings: ["Web Developer", "Programmer"],
         typeSpeed: 100,
         backSpeed: 70,
         loop: true
       });
- });
 
-  // Smooth Scroll
-   $(document).on('click', 'a[href^="#"]', function(e) {
-     e.preventDefault();
-     
-     $('html, body').animate({
-       scrollTop: $($.attr(this, 'href')).offset().top
-      },700);
-    });
+     // Smooth Scroll
+      $(document).on('click', 'a[href^="#"]', function(e) {
+        e.preventDefault();
+        
+        $('html, body').animate({
+          scrollTop: $($.attr(this, 'href')).offset().top
+        },700);
+      });
+ });
 
 
     // Form Validation with Sweet Alert CDN Notification using Javascript
@@ -84,7 +84,7 @@ $(document).ready(function(){
      window.addEventListener('scroll', scrollReveal);
     
      function scrollReveal() {
-       const reveal = document.querySelectorAll('.reveal');
+       const reveal = document.querySelectorAll('.section .reveal');
 
        for (let i = 0; i < reveal.length; i++) {
          const windowHeight = window.innerHeight;
