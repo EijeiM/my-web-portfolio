@@ -89,7 +89,7 @@ $(document).ready(function(){
        for (let i = 0; i < reveal.length; i++) {
          const windowHeight = window.innerHeight;
          const revealTop = reveal[i].getBoundingClientRect().top;
-         const revealPoint = 160;
+         const revealPoint = 170;
          
          if(revealTop < windowHeight - revealPoint) {
            reveal[i].classList.add('active');
