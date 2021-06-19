@@ -75,6 +75,11 @@ h6 {
   color: #2F0A0D;
 }
 
+.modal-content .text-indent {
+  text-indent: 50px;
+  text-align: justify;
+}
+
 /* Scroll Reveal */
 .reveal {
 	position: relative;
@@ -150,6 +155,8 @@ h6 {
 
 .about_description {
   padding-top: 50px;
+  text-indent: 50px;
+  text-align: justify;
 }
 
 .about_description .about-desc {
