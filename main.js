@@ -50,7 +50,7 @@ $(document).ready(function(){
 
 
     // Form Validation with Sweet Alert CDN Notification using Javascript
-    const name = document.querySelector('.name');
+    const contactName = document.querySelector('.name');
     const contact = document.querySelector('.contact'); 
     const email = document.querySelector('.email'); 
     const message = document.querySelector('.message'); 
@@ -61,7 +61,7 @@ $(document).ready(function(){
 
     function formValidation(e) {
 
-      if (name.value === '' || contact.value === '' || email.value === '' || message.value === '') {
+      if (contactName.value === '' || contact.value === '' || email.value === '' || message.value === '') {
         Swal.fire({
           icon: 'error',
           title: 'Must be required',
@@ -98,4 +98,3 @@ $(document).ready(function(){
          }
        }
      }
-
