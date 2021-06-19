@@ -78,7 +78,7 @@ h6 {
 /* Scroll Reveal */
 .reveal {
 	position: relative;
-	transform: translateY(170px);
+	transform: translateY(160px);
 	opacity: 0;
 	transition: all 2s ease;
 }

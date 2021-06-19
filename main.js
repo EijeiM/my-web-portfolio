@@ -80,21 +80,22 @@ $(document).ready(function(){
       e.preventDefault();
     }
 
-    // Scroll Reveal using Javascript
-    window.addEventListener('scroll', scrollReveal);
+     // Scroll Reveal using Javascript
+     window.addEventListener('scroll', scrollReveal);
     
-    function scrollReveal() {
-      const reveal = document.querySelectorAll('.reveal');
-      for (let i = 0; i < reveal.length; i++) {
-        const windowHeight = window.innerHeight;
-        const revealTop = reveal[i].getBoundingClientRect().top;
-        const revealPoint = 150;
-        
-        if(revealTop < windowHeight - revealPoint) {
-          reveal[i].classList.add('active');
-        } else {
-          reveal[i].classList.remove('active');
-        }
-      }
-    }
+     function scrollReveal() {
+       const reveal = document.querySelectorAll('.reveal');
+
+       for (let i = 0; i < reveal.length; i++) {
+         const windowHeight = window.innerHeight;
+         const revealTop = reveal[i].getBoundingClientRect().top;
+         const revealPoint = 160;
+         
+         if(revealTop < windowHeight - revealPoint) {
+           reveal[i].classList.add('active');
+         } else {
+           reveal[i].classList.remove('active');
+         }
+       }
+     }
 
