@@ -64,17 +64,18 @@ $(document).ready(function(){
       if (contactName.value === '' || contact.value === '' || email.value === '' || message.value === '') {
         Swal.fire({
           icon: 'error',
-          title: 'Must be required',
-          text: 'Name, Contact, Email and Message are required!'
+          title: 'Must be required!',
+          text: 'Name, Contact, Email and Message are required.'
         });
       } else {
         form.reset();
         Swal.fire({
           position: 'center',
           icon: 'success',
+          title: 'Thank You!',
           text: 'Sent has been successfully!',
           showConfirmButton: false,
-          timer: 2000
+          timer: 2500
         });
       }
       e.preventDefault();
