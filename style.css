@@ -274,19 +274,19 @@ h6 {
 }
 
 .skills_html{
-  width: 80%;
+  width: 70%;
 }
 .skills_css{
-  width: 80%;
+  width: 60%;
 }
 .skills_js {
   width: 70%;
 }
 .skills_material{
-  width: 80%;
+  width: 70%;
 }
 .skills_php {
-  width: 70%;
+  width: 50%;
 }
 .skills_asp{
   width: 50%;
@@ -294,7 +294,7 @@ h6 {
 .skills_laravel{
   width: 50%;
 }
-.skills_python{
+.skills_codeigniter{
   width: 50%;
 }
 
